@@ -1,0 +1,18 @@
+# Godot 4+ editor cache
+.godot/
+
+# Godot imported resources and export artifacts
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Mono/C# artifacts
+.mono/
+data_*/
+mono_crash.*.json
+
+# System files
+.DS_Store
+Thumbs.db
+*~
