@@ -25,6 +25,7 @@ signal scene_exited(scene: BaseGameScene)
 const SceneFlowScript := preload("res://scripts/core/scene_flow.gd")
 
 const DEFAULT_BATTLE_SCENE := "res://scenes/battle.tscn"
+const DEFAULT_BATTLE_SCENE_2D := "res://scenes/battle_2d.tscn"
 const DEFAULT_MESSAGE_DURATION := 4.0
 
 @export var scene_id: StringName = &""

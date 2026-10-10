@@ -88,6 +88,7 @@ SceneInteractable
 - `scenes/cloud_terrace.tscn`：云台，可从剑宗传送进入。
 - `scenes/mystic_realm.tscn`：副本秘境，可从剑宗秘境入口进入。
 - `scenes/battle.tscn`：复用原战斗 UI，可被任意 RPG 场景启动并返回来源场景。
+- `scenes/battle_2d.tscn`：纯 Control 2D 战斗场景，使用 `BattleScene2D` 父类。
 
 `tests/test_scene.gd` 覆盖场景父类、具体场景、互动物继承、对话动作和跨场景上下文。
 
@@ -180,6 +181,8 @@ DungeonScene（场景编排）
 - `scripts/dungeon/dungeon_board_view.gd`：六边形棋盘绘制与鼠标输入。
 - `scripts/dungeon/dungeon_scene.gd`：秘境 UI 编排、战斗跳转与返回恢复。
 - `scripts/ui/battle_ui.gd`：3D 战斗场景控制、HUD 与引擎信号连接。
+- `scripts/ui/battle_scene_2d.gd`：2D 战斗场景父类，负责战场绘制、按钮菜单、QTE 和战斗流程。
+- `scripts/ui/battle_2d_scene.gd`：默认 2D 战斗子类，绑定 `scenes/battle_2d.tscn`。
 - `scripts/ui/battle_unit_visual_3d.gd`：可复用的 3D 单位表现层，只读取通用战斗数据。
 - `scripts/ui/battle_radial_menu.gd`：圆盘行动菜单，负责展示条目并回传稳定 ID。
 - `scripts/ui/dialogue_panel.gd`：通用对话 UI，只读取 `DialogueData` 并回传选项动作。
